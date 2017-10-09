@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Introduction</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainA.css?v=0.01">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-default navbar-fixed-top clearfix">
+            <div class="container navbar-inner">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://lsdk.github.io"><img src="img/nxp-logo.png" alt="NXP logo"></a>
+                </div>
+                <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav menusm">
+                       <li><a href="index.html" class="ms_top">Home </a></li>
+                       <li class="active"><a href="introduction.html" class="ms_top">Introduction</a></li>
+                        <li ><a href="components.html" class="ms_top">Components</a></li>
+                        <li><a href="document.html" class="ms_top">Documentation</a></li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row main-introduct-container">
+                <div class="separator"></div>
+                <h1 class="text-center extrabold">Introduction</h1>
+                <h4>About QorIQ Layerscape Software Development Kit (LSDK)</h4>
+
+                <p>LSDK is a complete Linux kit for NXP QorIQ ARM-based SoCs and the reference and evaluation boards that are available for them.</p>
+
+                <p>It is a hybrid form of a Linux distribution because it combines the following major components to form a complete Linux system. </p>
+                <ul style="list-style-type: none">
+                  <ul style="list-style-type: none">
+
+                    <li>NXP firmware components including</li>
+                    <ol>
+                        <li>PPA, a resident EL3 privilege secure firmware for ARMv8A.</li>
+                        <li>NXP peripheral firmware components for DPAA1, DPAA2, and PPFE.</li>
+                    </ol>
+
+                    <li>NXP boot loaders. Two are offered:◦U-Boot, based on denx.de plus patches.</li>
+                    <ol>
+                        <li>U-Boot, based on denx.de plus patches.</li>
+                        <li>UEFI, based on Tianocore.</li>
+                        <li>NXP Linux kernel, based on kernel.org upstream plus patches.</li>
+                    </ol>
+                    <li>NXP added user space components.</li>
+                    <li>Ubuntu standard user space file set (user land), including compilers and cross compiler.</li>
+
+                  </ul>
+                </ul>
+               <p> The use of Ubuntu user land is what makes LSDK a hybrid. It is not Ubuntu per se because it uses an NXP kernel, but it still uses Ubuntu user space files. This is possible because NXP ARM SoCs are standards-based so programs like bash and thousands of others run without being recompiled.</p>
+
+                <p>The benefit of using Ubuntu user land is the easy availability of thousands of standard Linux user space packages. The experience of using the LSDK is similar to using Ubuntu, but the kernel, firmware, and some special NXP packages are managed separately.</p>
+
+                <p>LSDK also permits easy access to the individual components that either originate or are modified by NXP. Source code is made available via git.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+      <!-- container cols -->
+      <div class="copyright">© Copyright <b>2017 NXP Semiconductors</b>. All Rights Reserved.</div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

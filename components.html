@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LSDK Open Source</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainA.css?v=0.01">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-default navbar-fixed-top clearfix">
+            <div class="container navbar-inner">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://lsdk.github.io"><img src="img/nxp-logo.png" alt="NXP logo"></a>
+                </div>
+                <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1 clearfix">
+                    <ul class="nav navbar-nav menusm">
+                        <li><a href="index.html" class="ms_top">Home </a></li>
+                        <li><a href="introduction.html" class="ms_top">Introduction</a></li>
+                        <li class="active"><a href="components.html" class="ms_top">Components</a></li>
+                        <li><a href="document.html" class="ms_top">Documentation</a></li>
+                    </ul>
+                </div>
+                <!--  <div class="dropdown">
+               				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               				    Dropdown trigger
+               				    <span class="caret"></span>
+               				  </button>
+               				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+               				    ...
+               				  </ul>
+               				</div> -->
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <!-- main -container end -->
+                <div class="separator"></div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 ">
+                    <aside class="left-panel left-panel-hide" id="left-panel">
+                        <div class="auto-query-con">
+                            <!-- <input type="text" name="query" id="autoquery" placeholder="search"> -->
+                        </div>
+                        <nav class="navigation">
+                            <ul class="main-menu" role="tablist">
+                                <li role="presentation" class="has-submenu active">
+                                    <a class="menu-title" href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                        <i class="fa fa-leaf"></i>
+                                        <span class="nav-label">LSDK Utility</span>
+                                    </a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a class="menu-title" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                        <i class="fa fa-leaf"></i>
+                                        <span class="nav-label">LSDK Firmware</span>
+                                    </a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a class="menu-title" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                                        <i class="fa fa-leaf"></i>
+                                        <span class="nav-label">LSDK Linux</span>
+                                    </a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a class="menu-title" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                                        <i class="fa fa-leaf"></i>
+                                        <span class="nav-label">LSDK Apps</span>
+                                    </a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a class="menu-title" href="#images" aria-controls="images" role="tab" data-toggle="tab">
+                                        <i class="fa fa-leaf"></i>
+                                        <span class="nav-label">LSDK Images</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+                <div class="main-container tab-content col-xs-12 col-sm-8 col-md-9 col-lg-9 ">
+                    <div class="tab-pane active" role="tabpanel" id="home">
+                        <div id="main-wraper" class="main-wraper">
+                            <ul id="col-list">
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>flexbuild</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The LSDK build system includes three major components: package builder, rootfs maker and image installer. The utility can run on x86 host of Ubuntu 16.04, arm targets and docker container.</p>
+                                    </div>
+                                    <div class="repoButton">
+                                        <a href="http://www.nxp.com/webapp/swlicensing/sso/downloadSoftware.sp?catid=LAYERSCAPE-SDK" target="_blank">
+                                            <button class="outline">Download</button>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="profile">
+                        <div id="main-wraper" class="main-wraper">
+                            <ul id="col-list">
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>dpl-examples</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Datapath layout files.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/dpl-examples" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>fm-ucode</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Microcode families of the Frame Manager hardware block in QorIQ products. Specific platforms require specific binaries, and those also have to further match specific software versions (Frame Manager Driver -- FMD).</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/fm-ucode" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>firmware-cortina</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The firmware images for the Cortina PHY devices on QorIQ development boards.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/firmware-cortina" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>mc-binary</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Management Complex Firmware for Data Path Acceleration Architecture, second generation.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/mc-binary" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>ppa</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The Primary Protected Application (sources).</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/ppa-generic" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>ppa-binary</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The Primary Protected Application (binaries).</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/ppa-binary" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>rcw</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Reset Configuration Word - hardware boot-time parameters for the QorIQ targets.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/rcw" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>qe-ucode</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>TThe microcode binaries for the QUICC Engine hardware block in QorIQ products.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/qe-ucode" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>ramdiskrfs</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Rootfs images to initial bringup.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/ramdiskrfs" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>u-boot</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>An open source primary boot loader used in embedded devices to package the instructions to boot the device's operating system kernel.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/u-boot" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>uefi</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The Unified Extensible Firmware Interface (Sources)</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/uefi" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>uefi-binary</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The Unified Extensible Firmware Interface (Binaries)</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/uefi-binary" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="messages">
+                        <div id="main-wraper" class="main-wraper">
+                            <ul id="col-list">
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>cryptodev-linux</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>A /dev/crypto device driver kernel module.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/cryptodev-linux" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>linux</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The Linux kernel for QorIQ ARM platforms.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/linux" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="settings">
+                        <div id="main-wraper" class="main-wraper">
+                            <ul id="col-list">
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>aiopsl</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>AIOP (Advanced I/O Processor) Service Layer.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/aiopsl" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>cantest</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Test programs for CAN communication using the SocketCAN API.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/cantest" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>ceetm</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>A sub block of the QMan and is an alternative to the regular frame queue - work queue - channel scheduling mode.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/ceetm" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>cst</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Utility for security boot.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/cst" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>dpdk</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Data Plane Development Kit (DPDK) software</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/dpdk" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>dpdk-extras</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Data Plane Development Kit Extended utilities.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/dpdk-extras" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>eth-config</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Ethernet Configuration Files.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/eth-config" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>flib</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Foundation library for DPAA (Data Path Acceleration Architecture).</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/flib" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>fmc</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Frame Manager Configuration tool.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/fmc" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>fmlib</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Frame Manager User Space Library.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/fmlib" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>gpp-aioptool</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>A userspace application for performing operations on an AIOP Tile using MC interfaces.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/gpp-aioptool" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>odp</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>OpenDataPlane (ODP): a data plane application programming environment.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/odp" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>openssl</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Secure Socket Layer for QorIQ ARM platforms.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/openssl" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>ovs-dpdk</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Open vSwitch with the Data Plane Development Kit.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/ovs-dpdk" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>ptpd</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>The PTP daemon (PTPd) implementing the Precision Time Protocol (PTP) version 2 as defined by 'IEEE Std 1588-2008'.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/ptpd" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>qbman_userspace</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Qman/Bman applications and libraries.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/qbman_userspace" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="repo col-item">
+                                    <div class="repoTitle">
+                                        <h4>restool</h4>
+                                    </div>
+                                    <div class="repoDescription">
+                                        <p>Resource manager tool for Data Path Acceleration Architecture, second generation.</div>
+                                    <div class="repoButton">
+                                        <a href="https://github.com/qoriq-open-source/restool" target="_blank">
+                                            <button class="outline">View on GitHub</button>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="images">
+                        <div id="main-wraper" class="main-wraper">
+                            <select class="form-control form-group" id="test">
+                                <option>1706</option>
+                                <option>1709</option>
+                            </select>
+                            <div class="tableWrapper">
+                                <table>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <!-- container cols -->
+        <div class="copyright">© Copyright <b>2017 NXP Semiconductors</b>. All Rights Reserved.</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $('#myTabs a').click(function(e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+    var version= $("#test").children('option:selected').val()
+    var url='download'+version+'.json?ver=1.1'
+    $("#test").change(function(){
+        var version=$(this).children('option:selected').val()
+        var url='download'+version+'.json?ver=1.1'
+        $(".tableWrapper tbody").html('')
+        getImage(url)
+    })
+    getImage(url)
+    function getImage(url){
+        var url='json/'+url
+        $.get(url,function(rs){
+            if(typeof rs=='string'){
+                rs=JSON.parse(rs);
+            }
+            for(var i=0;i<rs.length;i++){
+                var table_download='<tr class="repoList" index="'+i+'"><td><a href="agreement.html?down_idx='+i+'&title='+rs[i][0]+'" target="_blank"><h4 class="js-title">'+rs[i][0]+' </h4><p class="repoDescriptionMd5 js-description">  md5sum : '+rs[i][1]+'</p><p class="repoDescription js-description">'+rs[i][2]+'</p></a></td><td class="download"><a href="agreement.html?down_idx='+i+'&title='+rs[i][0]+'"><button class="outline js-download">DOWNLOAD</button></a></td></tr>';
+                $(".tableWrapper tbody").append(table_download);
+
+            }
+        })
+    }
+
+    </script>
+</body>
+
+</html>
