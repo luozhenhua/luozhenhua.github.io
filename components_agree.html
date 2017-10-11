@@ -77,8 +77,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
-    var down_idx=$.getUrlParam('down_idx');
-        $.get("download.json",function(rs){
+    var down_idx=$.getUrlParam('down_idx'),
+        down_version=$.getUrlParam('down_version');
+        $.get("json/download"+down_version+".json",function(rs){
             if(typeof rs=='string'){
                 rs=JSON.parse(rs);
             }

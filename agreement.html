@@ -598,6 +598,7 @@
 		        </div>
 		        <form action="components_agree.html" method="get" class="js-paradesc">
 		            <input type="hidden" name="down_idx" class="down_idx" value="">
+                    <input type="hidden" name="down_version" class="down_version" value="">
 		            <div class="row sub-btn">
 		            	<button type="button" class="btn btn-orange btn-lg accept-btn js-accept">I Accept</button>
 		                <button type="button" class="btn btn-gray-dark btn-lg" id="decline">Decline</button>
@@ -627,6 +628,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
 	    var inputtitle=$.getUrlParam('title'),
+            down_version=$.getUrlParam('version'),
             down_idx=$.getUrlParam('down_idx');
         $(".js-title").text(inputtitle);
         $(".down_idx").val(down_idx);
@@ -644,6 +646,7 @@
     	})
     	 $(".js-accept").click(function(){
              $(".down_idx").val(down_idx);
+             $(".down_version").val(down_version);
     	    $(".js-paradesc").submit();
     })
     </script>

@@ -548,8 +548,9 @@
             if(typeof rs=='string'){
                 rs=JSON.parse(rs);
             }
+            var version= $("#test").children('option:selected').val()
             for(var i=0;i<rs.length;i++){
-                var table_download='<tr class="repoList" index="'+i+'"><td><a href="agreement.html?down_idx='+i+'&title='+rs[i][0]+'" target="_blank"><h4 class="js-title">'+rs[i][0]+' </h4><p class="repoDescriptionMd5 js-description">  md5sum : '+rs[i][1]+'</p><p class="repoDescription js-description">'+rs[i][2]+'</p></a></td><td class="download"><a href="agreement.html?down_idx='+i+'&title='+rs[i][0]+'"><button class="outline js-download">DOWNLOAD</button></a></td></tr>';
+                var table_download='<tr class="repoList" index="'+i+'"><td><a href="agreement.html?version='+version+'&down_idx='+i+'&title='+rs[i][0]+'" target="_blank"><h4 class="js-title">'+rs[i][0]+' </h4><p class="repoDescriptionMd5 js-description">  md5sum : '+rs[i][1]+'</p><p class="repoDescription js-description">'+rs[i][2]+'</p></a></td><td class="download"><a href="agreement.html?version='+version+'&down_idx='+i+'&title='+rs[i][0]+'"><button class="outline js-download">DOWNLOAD</button></a></td></tr>';
                 $(".tableWrapper tbody").append(table_download);
 
             }
