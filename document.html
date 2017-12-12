@@ -24,100 +24,143 @@
 </head>
 
 <body>
-    <div class="header">
-        <nav class="navbar navbar-default navbar-fixed-top clearfix">
-            <div class="container navbar-inner">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://lsdk.github.io"><img src="img/nxp-logo.png" alt="NXP logo"></a>
-                </div>
-                <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav menusm">
-                        <li><a href="index.html" class="ms_top">Home </a></li>
-                        <li><a href="introduction.html" class="ms_top">Introduction</a></li>
-                        <li><a href="components.html" class="ms_top">Components</a></li>
-                        <li class="active"><a href="document.html" class="ms_top">Documentation</a></li>
+<div class="header">
+    <nav class="navbar navbar-default navbar-fixed-top clearfix">
+        <div class="container navbar-inner">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://lsdk.github.io"><img src="img/nxp-logo.png" alt="NXP logo"></a>
+            </div>
+            <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav menusm">
+                    <li><a href="index.html" class="ms_top">Home </a></li>
+                    <li><a href="introduction.html" class="ms_top">Introduction</a></li>
+                    <li><a href="components.html" class="ms_top">Components</a></li>
+                    <li class="active"><a href="document.html" class="ms_top">Documentation</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div>
+<div class="container-docs">
+    <!-- <div class="container"> -->
+    <!-- <div class="separator"></div> -->
+    <section class="hero short">
+        <div class="col-wrap">
+            <h2>Documentation</h2>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row docs">
+            <div class="nav-docs col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+                <nav id="DocsNav">
+                    <ul role="tablist">
+                        <p><p>
+                        <li class="sub-nav" data-parent="Creating">
+                            <ul>
+                                <li class="parent active">
+                                    <a class="" href="#first" aria-controls="first" role="tab" data-toggle="tab">LSDK document - Knowledge Center ></a>
+                                </li>
+                                <li class="parent" role="presentation">
+                                    <a href="#second" aria-controls="second" role="tab" data-toggle="tab">Frequently Asked Question</a>
+                                </li>
+                                <li class="parent" role="presentation">
+                                    <a href="#three" aria-controls="three" role="tab" data-toggle="tab">Release History</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-container tab-content col-xs-12 col-sm-8 col-md-8 col-lg-8 details-docs">
+                <div class="tab-pane active" role="tabpanel" id="first">
+                    <h2>LSDK document - Knowledge Center</h2>
+                    <p>Layerscape Software Development Kit documentation can be accessed from the <a href="https://freescale.sdlproducts.com/LiveContent/web/pub.xql?c=t&action=home&pub=QorIQ_LSDK&lang=en-US" target="blank">Knowledge Center</a>.
+                    </p>
+                    <p>The following documents are specific to the LSDK 1709-update-103017 release. In the next release (LSDK 1712), the Knowledge Center will include the following guides.</p>
+                    <ul>
+                        <li><strong>Program Images:</strong> <a href="docs/ls1012ardb_image_program.html" target="blank">Instructions for Programming Images on the LS1012ARDB</a><br>
+                        <li><strong>CAAM DMA:</strong> <a href="docs/caam-dma.html" target="blank">CAAM DMA User Manual</a><br>
+                        <li><strong>Known Issue:</strong> <a href="docs/1709-update-knownissue.html" target="blank">LSDK 1709-update-103017 Open Issues</a><br>
+                        </li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
-            </div>
-        </nav>
-    </div>
-    <div class="container-docs">
-        <!-- <div class="container"> -->
-        <!-- <div class="separator"></div> -->
-        <section class="hero short">
-            <div class="col-wrap">
-                <h2>Documentation</h2>
-            </div>
-        </section>
-        <div class="container">
-            <div class="row docs">
-                <div class="nav-docs col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
-                    <nav id="DocsNav">
-                        <ul role="tablist">
-                            <p><p>
-                            <li class="sub-nav" data-parent="Creating">
-                                <ul>
-                                    <li class="parent active">
-                                        <a class="" href="#first" aria-controls="first" role="tab" data-toggle="tab">LSDK document - Knowledge Center ></a>
-                                    </li>
-                                    <li class="parent" role="presentation">
-                                        <a href="#second" aria-controls="second" role="tab" data-toggle="tab">Frequently Asked Question</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="tab-pane" role="tabpanel" id="second">
+                    <h2>Frequently Asked Questions</h2>
+                    <ul>
+                        <li><strong>Question:</strong> When building LSDK using Docker, what should the user do if he/she encounters errors like "Temporary failure resolving 'archive.ubuntu.com'" caused by Docker DNS config?<br>
+                            <strong>Answer:</strong>   To achieve permanent system-wide fix, the user needs to change the DNS settings of the Docker daemon. Implement the fix using the following command as an example:
+                            <pre class="codeblock">$ nmcli dev show | grep 'IP4.DNS'<br>IP4.DNS[1]:  10.192.130.201</pre>
+                            Create a daemon configuration file in the directory /etc/docker/daemon.json like below:<pre class="codeblock">{<br>"dns": ["10.192.130.201", "8.8.8.8"]<br>}</pre>Finally, restart docker service by using the command "sudo service docker restart"<p>
+                        </li>
+                        <li><strong>Question:</strong> On some boards which support DPAA1 network ports, what should the user do if he/she can't see the desired network interface using the command "ifconfig -a" in Linux due to the lack of MAC address in E2PROM flash or in the U-Boot environment variable?<br>
+                            <strong>Answer:</strong>   Set MAC address in the U-Boot environment variable like below:
+                            <pre class="codeblock">=&gt; setenv ethaddr 00:04:9F:00:00:00<br>=&gt; setenv eth1addr 00:04:9F:00:00:01<br>=&gt; setenv eth2addr 00:04:9F:00:00:02<br>=&gt; setenv eth3addr 00:04:9F:00:00:03<br>...<br>=&gt; saveenv</pre>
+                            The total number of MAC addresses must be no less than the total number of all network ports on the board.<p>
+                        </li>
+                        <li><strong>Question:</strong> When building Ubuntu rootfs in Flexbuild, what should the user do if the user interrupted the build proceeding in the midway unexpectedly, and an error such as "/usr/aptpkg/additional_packages_list_full: No such file or directory" occurs.<br>
+                            <strong>Answer:</strong>   Run the command, "flex-builder -i clean-distrorfs -a <arch>" to clean the old incomplete distro rootfs directory, then rebuild it again.<p>
+                        </li>
+                        <li><strong>Question:</strong> In the environment of some host machines, what should the user do if he/she encounters an error such as "mount: failed to setup loop device: No such file or directory".<br>
+                            <strong>Answer:</strong>   Run the command, "sudo losetup -f" to setup /dev/loop* device.<p>
+                        </li>
+
+                        <li><strong>Question:</strong> Where can the user find the Software Content Register?<br>
+                            <strong>Answer:</strong>   The SCR of LSDK can be got from https://lsdk.github.io/ -&gt  EULA (End User License Agreement) -&gt SCR.
+                        </li>
+
+                    </ul>
                 </div>
-                <div class="main-container tab-content col-xs-12 col-sm-8 col-md-8 col-lg-8 details-docs">
-                    <div class="tab-pane active" role="tabpanel" id="first">
-                        <h2>LSDK document - Knowledge Center</h2>
-                        <p>Layerscape Software Development Kit documentation can be accessed from external <a href="https://freescale.sdlproducts.com/LiveContent/web/pub.xql?c=t&action=home&pub=QorIQ_LSDK&lang=en-US" target="blank">Knowledge Center</a>.
-                        </p>
-                    </div>
-                    <div class="tab-pane" role="tabpanel" id="second">
-                        <h2>Frequently Asked Questions</h2>
-                        <ul>
-                            <li><strong>Question:</strong> In case of building LSDK in docker, if user encounters errors like "Temporary failure resolving 'archive.ubuntu.com'" caused by Docker DNS config.<br>
-                                <strong>Answer:</strong>   To achieve permanent system-wide fix, it needs to change the DNS settings of the Docker daemon. Please try to fix it by the following example: 
-                                    <pre class="codeblock">$ nmcli dev show | grep 'IP4.DNS'<br>IP4.DNS[1]:  10.192.130.201</pre>
-    then create a daemon configuration file at /etc/docker/daemon.json like below:<pre class="codeblock">{<br>"dns": ["10.192.130.201", "8.8.8.8"]<br>}</pre>Finally, restart docker service by "sudo service docker restart"<p>
-                            </li>
-                            <li><strong>Question:</strong> On some boards which support DPAA1 network ports, if user can't see the desired network interface with command "ifconfig -a" in Linux due to the lack of MAC address in E2PROM flash or in U-Boot environment variable.<br>
-                                <strong>Answer:</strong>   set MAC address in U-Boot environment variable like below:
-                                    <pre class="codeblock">=&gt; setenv ethaddr 00:04:9F:00:00:00<br>=&gt; setenv eth1addr 00:04:9F:00:00:01<br>=&gt; setenv eth2addr 00:04:9F:00:00:02<br>=&gt; setenv eth3addr 00:04:9F:00:00:03<br>...<br>=&gt; saveenv</pre>
-                                   The total number of MAC addresses must be no less than the total number of all network ports on the board.<p>
-                            </li>
-                            <li><strong>Question:</strong> During building Ubuntu rootfs in Flexbuild, if user interrupted the build proceeding in the midway unexpectedly, the error like "/usr/aptpkg/additional_packages_list_full: No such file or directory" might occur.<br>
-                                <strong>Answer:</strong>   Run "flex-builder -i clean-distrorfs -a <arch>" to clean the old incomplete distro rootfs directory, then rebuild it again.<p>
-                            </li>
-                            <li><strong>Question:</strong> In the environment of some host machines, user may encounter error like "mount: failed to setup loop device: No such file or directory".<br>
-                                <strong>Answer:</strong>   Run "sudo losetup -f" to setup /dev/loop* device.<p>
-                            </li>
-
-                            <li><strong>Question:</strong> Where can I find the Software Content Register?<br>
-                                <strong>Answer:</strong>   The SCR of LSDK can be got from https://lsdk.github.io/ -&gt  EULA (End User License Agreement) -&gt SCR.
-                            </li>
-
-                        </ul>
-                    </div>
+                <div class="tab-pane" role="tabpanel" id="three">
+                    <h2>Release History</h2>
+                    <select class="form-control form-group" id="resHistory">
+                        <option>1709-update-103017</option>
+                        <option>1709</option>
+                        <option>1706</option>
+                    </select>
+                    <div class="releaseHistory"></div>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </div>
-    <div id="footer">
-        <!-- container cols -->
-        <div class="copyright">© Copyright <b>2017 NXP Semiconductors</b>. All Rights Reserved.</div>
-    </div>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- </div> -->
+</div>
+<div id="footer">
+    <!-- container cols -->
+    <div class="copyright">© Copyright <b>2017 NXP Semiconductors</b>. All Rights Reserved.</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+  function resizeIframe(obj) {
+    ifheight = 760;
+    if ( obj.contentWindow.document.body.scrollHeight ) {
+        ifheight = obj.contentWindow.document.body.scrollHeight + 8;
+    }
+    obj.style.height = ifheight + 'px';
+  }
+</script>
+<script>
+    var version= $("#resHistory").children('option:selected').val()
+    var url='lsdk_revs/lsdk'+version+'.html'
+    $("#resHistory").change(function(){
+        var version=$(this).children('option:selected').val()
+        var url='lsdk_revs/lsdk'+version+'.html'
+        getImage(url)
+    })
+    getImage(url)
+    function getImage(url){
+        var resHistoryIframe=' <iframe src="'+url+'" width="750" onload="resizeIframe(this)" style="border:0px" scrolling="no" class="resiframe"></iframe>'
+        $(".releaseHistory").html(resHistoryIframe)
+    }
+
+</script>
 </body>
 
 </html>

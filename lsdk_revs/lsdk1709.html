@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv=Content-Type content="text/html; charset=gb2312">
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Lato;
+	panose-1:2 15 5 2 2 2 4 3 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+samp
+	{font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+14.4pt;background:white'><b><span style='font-size:12.5pt;font-family:"Lato",sans-serif;
+color:black'>What's New in LSDK 17.09</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+14.4pt;background:white'><b><span style='font-size:12.5pt;font-family:"Lato",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Highlights</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>LTS kernel 4.9.35, including KASLR</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>U-boot 2017.07</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>MC 10.3.2 update</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Support for DPDK 17.05 as base and OVS 2.7</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Flexbuild to support dual kernel build for 4.4 and 4.9</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Includes several software fixes. Refer to&nbsp;<a
+href="https://freescale.sdlproducts.com/LiveContent/web/pub.xql?c=t&amp;action=home&amp;pub=QorIQ_LSDK&amp;lang=en-US"><span
+style='color:black;text-decoration:none'>Fixed, Open, and Closed Issues</span></a>&nbsp;which
+has a list of all fixed issues</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Includes additional workarounds for Chip Errata: A-007815,
+A-007997, A-010053, A-010151, A-010477, A-010571</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Processor and Board Support</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>LS1043ARDB-PD</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Linux Kernel Core,
+Virtualization</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>LTS kernel 4.9.35, including KASLR</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>LTS kernel 4.4.80 update</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>LXD and LXD-Bridge</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Linux Kernel Drivers</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>DPAA2 Ethernet: 10G-base-KR, Priority Flow Control</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>RTC: adding PCF85263</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>TMU on LS1088A</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Data Plane Development Kit
+(DPDK)</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Support for DPDK 17.05 as base</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Support for MC 10.3.x</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Virtualization - OVS-DPDK</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Support for OVS-DPDK 2.7</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>U-Boot Boot Loader</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>U-boot 2017.07</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Chain of trust with confidentiality as part of distro boot</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>LS1088A: QSPI boot, SD secure boot</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Unified Extensible Firmware
+Interface (UEFI)</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Adding kernel 4.9 support</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>KASLR support</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>L2 cache Prefetch enable/disable support on LS2088A</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Ubuntu Distro boot support.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>USB 3.0 on LS2088A</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><b><span
+style='font-family:"Arial",sans-serif;color:black'>Other Tools and Utilities</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>AIOPSL: IPv6 Reassembly Atomic Fragment, QoS</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>FLIB: AES-CTR algorithm, AES-GCM algorithm</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>MC 10.3.2 update</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:normal;
+background:white'><span style='font-size:10.0pt;font-family:Symbol;color:black'>・<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Flexbuild</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in;
+line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
+"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Dual kernel build for 4.4 and 4.9</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in;
+line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
+"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Enhanced component's repository management to support single repository
+in one single command</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in;
+line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
+"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Encapsulation and decapsulation feature for secure boot</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in;
+line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
+"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Removing dpdk-extras repository</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in;
+line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
+"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Adding lttng-modules repository</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in;
+line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
+"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>Renaming&nbsp;flex_installer_&lt;arch&gt;.itb&nbsp;to&nbsp;flex_linux_&lt;arch&gt;.itb
+</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.kw
+	{mso-style-name:kw;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:24.0pt;
+font-family:"Times New Roman",serif;color:black'>CAAM DMA User Manual</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;color:black'>Description</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>The CAAM DMA module implements
+a DMA driver that uses the CAAM DMA controller to provide both SG and MEMCPY
+DMA capability which are used by the platform. It is based on the CAAM JR
+interface that must be enabled in the kernel config as a prerequisite for the
+CAAM DMA driver.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;color:black'>Kernel Configure Options</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>Tree View</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>To enable the CAAM DMA module,
+set the following options for &quot;make menuconfig&quot;:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>-*-
+Cryptographic API ---&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;
+[*] Hardware crypto devices ---&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;*&gt; Freescale CAAM-Multicore driver backend</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;*&gt;&nbsp;&nbsp;&nbsp;&nbsp; Freescale CAAM Job Ring driver backend</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;
+Device Drivers ---&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;*&gt; DMA Engine support ---&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&lt;*&gt;&nbsp;&nbsp;&nbsp;&nbsp; CAAM DMA engine support</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>NOTE: Be aware that the CAAM
+DMA driver depends on the CAAM and CAAM JR drivers which must also be enabled.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>Identifier</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>Below are the configure
+identifiers which are used in the kernel source code and default configuration
+files.</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Option</span></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Values</span></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Default
+   Value</span></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Description</span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>CRYPTO_CONFIG_DEV_FSL_CAAM_DMA</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>y/m/n</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>n</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>CAAM
+  DMA engine support</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;color:black'>Device Tree Node</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>Below is an example device
+tree node required by this feature.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>caam_dma
+{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>&nbsp;&nbsp;&nbsp;
+compatible = &quot;fsl,sec-v5.4-dma&quot;;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>};</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;color:black'>Source Files</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>Use the following source file in
+the Linux kernel for this feature.</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Source
+   File</span></b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Description</span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>drivers/dma/caam_dma.c</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>The
+  CAAM DMA driver</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;color:black'>Verification in Linux</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>On successful probing, the
+driver will print the following message in dmesg:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>[&nbsp;&nbsp;&nbsp;
+1.443940] caam-dma 1700000.crypto:caam_dma: caam dma support with 4 job rings</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>Additionally, you can also run
+the following command:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>ls
+-l /sys/class/dma/</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>total
+0</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>lrwxrwxrwx
+1 root root 0 Jan&nbsp; 1&nbsp; 1970 dma0chan0 -&gt;
+../../devices/platform/soc/1700000.crypto/1700000.crypto:caam_dma/dma/dma0chan0</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>lrwxrwxrwx
+1 root root 0 Jan&nbsp; 1&nbsp; 1970 dma0chan1 -&gt;
+../../devices/platform/soc/1700000.crypto/1700000.crypto:caam_dma/dma/dma0chan1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>lrwxrwxrwx
+1 root root 0 Jan&nbsp; 1&nbsp; 1970 dma0chan2 -&gt;
+../../devices/platform/soc/1700000.crypto/1700000.crypto:caam_dma/dma/dma0chan2</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New";color:black'>lrwxrwxrwx
+1 root root 0 Jan&nbsp; 1&nbsp; 1970 dma0chan3 -&gt;
+../../devices/platform/soc/1700000.crypto/1700000.crypto:caam_dma/dma/dma0chan3</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
